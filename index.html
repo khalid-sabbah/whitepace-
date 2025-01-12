@@ -1,13 +1,673 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Whitepace</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .containerr {
+        width: 80%;
+        margin-inline: auto;
+      }
+      body {
+        font-family: "Inter", serif;
+      }
+      button:hover i {
+        transform: translateX(4px);
+        transition-duration: 0.3s;
+      }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <section class="hero-sec bg-[#043873] relative">
+      <img class="absolute bottom-0 left-0" src="public/hero-bg.png" alt="" />
+      <div
+        class="containerr flex items-center justify-between py-4 max-xl:px-4 max-xl:w-full"
+      >
+        <img src="public/Logo.png" class="max-xl:mr-4" alt="" />
+        <nav class="flex items-center gap-16">
+          <ul class="flex gap-8 max-lg:hidden">
+            <li>
+              <select class="pr-2 bg-transparent text-white" name="" id="">
+                <option value="Products">Products</option>
+              </select>
+            </li>
+            <li>
+              <select class="pr-2 bg-transparent text-white" name="" id="">
+                <option value="Products">Products</option>
+              </select>
+            </li>
+            <li>
+              <select class="pr-2 bg-transparent text-white" name="" id="">
+                <option value="Products">Products</option>
+              </select>
+            </li>
+            <li>
+              <select class="pr-2 bg-transparent text-white" name="" id="">
+                <option value="Products">Products</option>
+              </select>
+            </li>
+          </ul>
+          <div class="btns flex items-center gap-[10px]">
+            <button
+              class="bg-[#FFE492] text-[#043873] px-10 py-4 rounded-lg max-sm:hidden"
+            >
+              Login
+            </button>
+            <button
+              class="bg-[#4F9CF9] text-white px-6 py-4 rounded-lg max-sm:hidden"
+            >
+              Try whitepace free <i class="fa-solid fa-arrow-right fa-sm"></i>
+            </button>
+            <i
+              class="fa-solid fa-bars text-4xl text-white hidden max-lg:block"
+            ></i>
+          </div>
+        </nav>
+      </div>
+      <div
+        class="hero-sec-heading containerr relative z-10 py-36 flex items-center gap-4 max-sm:flex-col max-sm:text-center max-xl:px-4 max-xl:w-full"
+      >
+        <div class="hero-sec-heading-text w-1/2 max-sm:w-full">
+          <h2 class="text-6xl font-bold text-white max-sm:text-3xl">
+            Get More Done With Whitepace
+          </h2>
+          <p class="text-lg text-[#FFFFFF] font-normal mt-4 mb-16">
+            Project management software that enables your teams to collaborate,
+            plan, analyze and manage everyday tasks
+          </p>
+          <button
+            class="bg-[#4F9CF9] text-white px-6 py-4 rounded-lg max-sm:mb-10"
+          >
+            Try whitepace free <i class="fa-solid fa-arrow-right fa-sm"></i>
+          </button>
+        </div>
+        <div class="hero-sec-heading-image">
+          <img class="w-full block" src="public/hero.avif" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="project-sec py-36">
+      <div
+        class="project-manage grid grid-cols-2 gap-20 items-center containerr mb-28 max-md:grid-cols-1 max-md:text-center max-xl:px-4 max-xl:w-full max-xl:gap-2"
+      >
+        <div class="project-manage-text relative">
+          <img
+            src="public/BACKGROUND.png"
+            class="absolute bottom-0 left-[-150px] -z-10"
+            alt=""
+          />
+          <h1
+            class="text-7xl font-bold relative max-md:text-3xl max-lg:text-5xl"
+          >
+            Project Management
+            <img
+              src="public/Element.png"
+              class="absolute bottom-[-15px] left-0 w-full block -z-10 max-md:left-24 max-md:w-1/2"
+              alt=""
+            />
+          </h1>
+          <p class="text-lg mt-4 mb-16">
+            Images, videos, PDFs and audio files are supported. Create math
+            expressions and diagrams directly from the app. Take photos with the
+            mobile app and save them to a note.
+          </p>
+          <button class="bg-[#4F9CF9] text-white px-6 py-4 rounded-lg">
+            Get Started <i class="fa-solid fa-arrow-right fa-sm"></i>
+          </button>
+        </div>
+        <div class="project-manage-image">
+          <img class="w-full block" src="public/custom.avif" alt="" />
+        </div>
+      </div>
+      <div
+        class="project-work-together grid grid-cols-2 gap-20 items-center containerr max-md:grid-cols-1 max-md:text-center max-xl:px-4 max-xl:w-full max-xl:gap-2"
+      >
+        <div class="project-manage-image">
+          <img
+            class="w-full block"
+            src="public/Work Together Image.png"
+            alt=""
+          />
+        </div>
+        <div class="project-manage-text">
+          <h1
+            class="text-7xl font-bold relative max-md:text-3xl max-lg:text-5xl"
+          >
+            Work Together
+            <img
+              src="public/Element.png"
+              class="absolute bottom-[-15px] left-0 -z-10 max-md:left-24 max-md:w-1/2"
+              alt=""
+            />
+          </h1>
+          <p class="text-lg mt-4 mb-16">
+            With whitepace, share your notes with your colleagues and
+            collaborate on them. You can also publish a note to the internet and
+            share the URL with others.
+          </p>
+          <button class="bg-[#4F9CF9] text-white px-6 py-4 rounded-lg">
+            Try it now <i class="fa-solid fa-arrow-right fa-sm"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="extension-sec py-36 bg-[#043873]">
+      <div
+        class="grid grid-cols-2 gap-20 items-center containerr max-md:grid-cols-1 max-md:text-center max-xl:px-4 max-xl:w-full max-xl:gap-2"
+      >
+        <div class="extension-text text-white">
+          <h1
+            class="text-7xl font-bold relative max-md:text-3xl max-lg:text-5xl"
+          >
+            Use as Extension
+            <img
+              src="public/Element.png"
+              class="absolute bottom-[-15px] left-0 w-full block max-md:left-24 max-md:w-1/2"
+              alt=""
+            />
+          </h1>
+          <p class="text-lg mt-4 mb-16">
+            Use the web clipper extension, available on Chrome and Firefox, to
+            save web pages or take screenshots as notes.
+          </p>
+          <button class="bg-[#4F9CF9] text-white px-6 py-4 rounded-lg mb-4">
+            Let's Go <i class="fa-solid fa-arrow-right fa-sm"></i>
+          </button>
+        </div>
+        <div class="extension-image">
+          <img class="w-full block" src="public/ext.webp" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="customise-sec py-36">
+      <div
+        class="grid grid-cols-2 gap-20 items-center containerr max-md:grid-cols-1 max-md:text-center max-xl:px-4 max-xl:w-full max-xl:gap-2"
+      >
+        <div class="customise-image">
+          <img class="w-full block" src="public/custom.avif" alt="" />
+        </div>
+        <div class="customise-text">
+          <h1
+            class="text-7xl font-bold relative max-md:text-3xl max-lg:text-5xl"
+          >
+            Customise it to your needs
+            <img
+              src="public/Element.png"
+              class="absolute bottom-[-15px] left-0 w-full block -z-10 max-md:left-24 max-md:w-1/2"
+              alt=""
+            />
+          </h1>
+          <p class="text-lg mt-4 mb-16">
+            UCustomise the app with plugins, custom themes and multiple text
+            editors (Rich Text or Markdown). Or create your own scripts and
+            plugins using the Extension API.
+          </p>
+          <button class="bg-[#4F9CF9] text-white px-6 py-4 rounded-lg mb-4">
+            Let's Go <i class="fa-solid fa-arrow-right fa-sm"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="plan-sec pb-36">
+      <div class="containerr max-xl:px-4 max-xl:w-full max-xl:gap-2">
+        <div class="plan-text text-center mb-4">
+          <h1
+            class="text-7xl font-bold relative max-md:text-3xl max-lg:text-5xl"
+          >
+            Choose Your Plan
+            <img
+              src="public/Element.png"
+              class="absolute bottom-[-15px] right-0 -z-10 max-md:left-24 max-md:w-1/2"
+              alt=""
+            />
+          </h1>
+          <p class="text-lg mt-4 mb-16">
+            Whether you want to get organized, keep your personal life on track,
+            or boost workplace productivity, Evernote has the <br />
+            right plan for you.
+          </p>
+        </div>
+        <div class="plan-cards grid grid-cols-3 gap-4 max-md:grid-cols-1">
+          <div
+            class="plan-card flex flex-col border-[1px] rounded-lg border-[#FFE492] py-10 px-11"
+          >
+            <div class="plan-card-header flex flex-col gap-2 mb-2">
+              <span class="text-2xl font-semibold">Free</span>
+              <span class="text-3xl font-bold">$0</span>
+              <p>Capture ideas and find them quickly</p>
+            </div>
+            <div class="plan-card-content flex flex-col gap-4">
+              <p class="flex items-center gap-4 leading-5 tracking-tighter">
+                <i class="fa-regular fa-circle-check"></i> Sync unlimited
+                devices
+              </p>
+              <p class="flex items-center gap-4 leading-5">
+                <i class="fa-regular fa-circle-check"></i> 10 GB monthly uploads
+              </p>
+              <p class="flex items-center gap-4 leading-5">
+                <i class="fa-regular fa-circle-check"></i> 200 MB max. note size
+              </p>
+              <p class="flex items-center gap-4 leading-5 tracking-tighter">
+                <i class="fa-regular fa-circle-check"></i> Customize Home
+                dashboard and access extra widgets
+              </p>
+              <p class="flex items-center gap-4 leading-5">
+                <i class="fa-regular fa-circle-check"></i> Connect primary
+                Google Calendar account
+              </p>
+              <p class="flex items-center gap-4 leading-5">
+                <i class="fa-regular fa-circle-check"></i>Add due dates,
+                reminders, and notifications to your tasks
+              </p>
+            </div>
+            <button
+              class="border-[1px] border-[#FFE492] self-start px-8 py-2 rounded-lg mt-4"
+            >
+              Get Started
+            </button>
+          </div>
+          <div
+            class="plan-card flex flex-col rounded-lg bg-[#043873] text-white py-10 px-11"
+          >
+            <div class="plan-card-header flex flex-col gap-2 mb-2">
+              <span class="text-2xl font-semibold">Personal</span>
+              <span class="text-3xl font-bold text-[#FFE492]">$11.99</span>
+              <p>Keep home and family on track</p>
+            </div>
+            <div class="plan-card-content flex flex-col gap-4">
+              <p class="flex items-center gap-4 leading-5 tracking-tighter">
+                <i class="fa-regular fa-circle-check text-[#FFE492]"></i> Sync
+                unlimited devices
+              </p>
+              <p class="flex items-center gap-4 leading-5">
+                <i class="fa-regular fa-circle-check text-[#FFE492]"></i> 10 GB
+                monthly uploads
+              </p>
+              <p class="flex items-center gap-4 leading-5">
+                <i class="fa-regular fa-circle-check text-[#FFE492]"></i> 200 MB
+                max. note size
+              </p>
+              <p class="flex items-center gap-4 leading-5 tracking-tighter">
+                <i class="fa-regular fa-circle-check text-[#FFE492]"></i>
+                Customize Home dashboard and access extra widgets
+              </p>
+              <p class="flex items-center gap-4 leading-5">
+                <i class="fa-regular fa-circle-check text-[#FFE492]"></i>
+                Connect primary Google Calendar account
+              </p>
+              <p class="flex items-center gap-4 leading-5">
+                <i class="fa-regular fa-circle-check text-[#FFE492]"></i>Add due
+                dates, reminders, and notifications to your tasks
+              </p>
+            </div>
+            <button class="bg-[#4F9CF9] self-start px-8 py-2 rounded-lg mt-4">
+              Get Started
+            </button>
+          </div>
+          <div
+            class="plan-card flex flex-col border-[1px] rounded-lg border-[#FFE492] py-10 px-11"
+          >
+            <div class="plan-card-header flex flex-col gap-2 mb-2">
+              <span class="text-2xl font-semibold">Organization</span>
+              <span class="text-3xl font-bold">$49.99</span>
+              <p>Capture ideas and find them quickly</p>
+            </div>
+            <div class="plan-card-content flex flex-col gap-4">
+              <p class="flex items-center gap-4 leading-5 tracking-tighter">
+                <i class="fa-regular fa-circle-check"></i> Sync unlimited
+                devices
+              </p>
+              <p class="flex items-center gap-4 leading-5">
+                <i class="fa-regular fa-circle-check"></i> 10 GB monthly uploads
+              </p>
+              <p class="flex items-center gap-4 leading-5">
+                <i class="fa-regular fa-circle-check"></i> 200 MB max. note size
+              </p>
+              <p class="flex items-center gap-4 leading-5 tracking-tighter">
+                <i class="fa-regular fa-circle-check"></i> Customize Home
+                dashboard and access extra widgets
+              </p>
+              <p class="flex items-center gap-4 leading-5">
+                <i class="fa-regular fa-circle-check"></i> Connect primary
+                Google Calendar account
+              </p>
+              <p class="flex items-center gap-4 leading-5">
+                <i class="fa-regular fa-circle-check"></i>Add due dates,
+                reminders, and notifications to your tasks
+              </p>
+            </div>
+            <button
+              class="border-[1px] border-[#FFE492] self-start px-8 py-2 rounded-lg mt-4"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="work-sec py-36 bg-[#043873] relative">
+      <img
+        src="public/BACKGROUND-2.png"
+        class="absolute bottom-[-100px] left-0 max-sm:hidden"
+        alt=""
+      />
+      <div class="work-text containerr text-white text-center">
+        <h1 class="text-7xl font-bold relative max-md:text-3xl max-lg:text-5xl">
+          Your work, everywhere you are
+          <img
+            src="public/Element-2.png"
+            class="absolute bottom-[-15px] right-0 max-md:left-24 max-md:w-1/2"
+            alt=""
+          />
+        </h1>
+        <p class="text-lg mt-4 mb-16">
+          Access your notes from your computer, phone or tablet by synchronising
+          with various services, including whitepace, Dropbox and OneDrive. The
+          app is available on Windows, macOS, Linux, Android and iOS. A terminal
+          app is also available!
+        </p>
+        <button class="bg-[#4F9CF9] text-white px-6 py-4 rounded-lg mb-4">
+          Let's Go <i class="fa-solid fa-arrow-right fa-sm"></i>
+        </button>
+      </div>
+    </section>
+    <section class="data-sec pt-36">
+      <div
+        class="grid grid-cols-2 gap-20 items-center containerr max-md:grid-cols-1 max-md:text-center max-xl:px-4 max-xl:w-full max-xl:gap-2"
+      >
+        <div class="data-text">
+          <h1
+            class="text-7xl font-bold relative max-md:text-3xl max-lg:text-5xl"
+          >
+            100% your data
+            <img
+              src="public/Element.png"
+              class="absolute bottom-[-15px] right-0 -z-10 max-md:left-24 max-md:w-1/2"
+              alt=""
+            />
+          </h1>
+          <p class="text-lg mt-4 mb-16">
+            The app is open source and your notes are saved to an open format,
+            so you'll always have access to them. Uses End-To-End Encryption
+            (E2EE) to secure your notes and ensure no-one but yourself can
+            access them.
+          </p>
+          <button class="bg-[#4F9CF9] text-white px-6 py-4 rounded-lg mb-4">
+            Read more <i class="fa-solid fa-arrow-right fa-sm"></i>
+          </button>
+        </div>
+        <div class="data-image">
+          <img class="w-full block" src="public/data-img.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="sponsors-sec py-36">
+      <div class="containerr max-xl:px-4 max-xl:w-full">
+        <div class="sponsors-text text-center">
+          <h1
+            class="text-7xl font-bold relative max-md:text-3xl max-lg:text-5xl"
+          >
+            Our sponsors
+            <img
+              src="public/Element.png"
+              class="absolute bottom-[-15px] right-0 -z-10 max-md:left-24 max-md:w-1/2"
+              alt=""
+            />
+          </h1>
+          <div
+            class="sponsors-imgs flex justify-between items-center mt-16 max-md:flex-col max-lg:flex-col max-xl:gap-10"
+          >
+            <img src="public/Apple.png" alt="" />
+            <img src="public/Microsoft.png" alt="" />
+            <img src="public/Slack.png" alt="" />
+            <img src="public/Google.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="apps-sec py-36 bg-[#043873] relative">
+      <img src="public/apps-bg.png" class="absolute top-0 left-0" alt="" />
+      <div
+        class="grid grid-cols-2 gap-20 items-center containerr max-md:grid-cols-1 max-md:text-center max-xl:px-4 max-xl:w-full max-xl:gap-2"
+      >
+        <div class="apps-image">
+          <img class="w-full block" src="public/Apps.png" alt="" />
+        </div>
+        <div class="apps-text text-white">
+          <h1 class="text-7xl font-bold max-md:text-3xl max-lg:text-5xl">
+            Work with Your Favorite Apps Using whitepace
+          </h1>
+          <p class="text-lg mt-4 mb-16">
+            Whitepace teams up with your favorite software. Integrate with over
+            1000+ apps with Zapier to have all the tools you need for your
+            project success.
+          </p>
+          <button class="bg-[#4F9CF9] text-white px-6 py-4 rounded-lg mb-4">
+            Read more <i class="fa-solid fa-arrow-right fa-sm"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="clients-sec py-36">
+      <div class="containerr max-xl:px-4 max-xl:w-full">
+        <h1
+          class="text-7xl text-center font-bold relative max-md:text-3xl max-lg:text-5xl"
+        >
+          What Our Clients Says
+          <img
+            src="public/Element.png"
+            class="absolute bottom-[-15px] right-0 -z-10 max-md:left-24 max-md:w-1/2"
+            alt=""
+          />
+        </h1>
+        <div
+          class="clients-cards grid grid-cols-3 gap-8 mt-12 max-md:grid-cols-1"
+        >
+          <div
+            class="clients-card shadow-xl py-16 px-10 rounded-lg max-lg:px-6"
+          >
+            <div class="clients-card-comment">
+              <img src="public/Quote.png" alt="" />
+              <p class="py-6 border-b-2 border-black text-lg">
+                Whitepate is designed as a collaboration tool for businesses
+                that is a full project management solution.
+              </p>
+            </div>
+            <div class="clients-card-author flex items-center gap-6 mt-10">
+              <img src="public/Avater.png" class="" alt="" />
+              <div class="clients-card-author-text">
+                <p class="text-xl font-semibold">Oberon Shaw, MCH</p>
+                <p>Head of Talent Acquisition, North America</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="clients-card bg-[#4F9CF9] text-white py-16 px-10 rounded-lg max-lg:px-6"
+          >
+            <div class="clients-card-comment">
+              <img src="public/qoute-white.png" alt="" />
+              <p class="py-6 border-b-2 border-white text-lg">
+                Whitepate is designed as a collaboration tool for businesses
+                that is a full project management solution.
+              </p>
+            </div>
+            <div class="clients-card-author flex items-center gap-6 mt-10">
+              <img src="public/Avater.png" class="" alt="" />
+              <div class="clients-card-author-text">
+                <p class="text-xl font-semibold text-[#043873]">
+                  Oberon Shaw, MCH
+                </p>
+                <p>Head of Talent Acquisition, North America</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="clients-card bg-[#4F9CF9] text-white py-16 px-10 rounded-lg max-lg:px-6"
+          >
+            <div class="clients-card-comment">
+              <img src="public/qoute-white.png" alt="" />
+              <p class="py-6 border-b-2 border-white text-lg">
+                Whitepate is designed as a collaboration tool for businesses
+                that is a full project management solution.
+              </p>
+            </div>
+            <div class="clients-card-author flex items-center gap-6 mt-10">
+              <img src="public/Avater.png" class="" alt="" />
+              <div class="clients-card-author-text">
+                <p class="text-xl font-semibold text-[#043873]">
+                  Oberon Shaw, MCH
+                </p>
+                <p>Head of Talent Acquisition, North America</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="whitepace-today py-36 bg-[#043873]">
+      <div class="containerr">
+        <div class="work-text containerr text-white text-center">
+          <h1 class="text-7xl font-bold max-md:text-3xl max-lg:text-5xl">
+            Try Whitepace<br />
+            today
+          </h1>
+          <p class="text-2xl mt-4 mb-16">
+            Get started for free.<br />
+            Add your whole team as your needs grow.
+          </p>
+          <button class="bg-[#4F9CF9] text-white px-6 py-4 rounded-lg mb-4">
+            Try Taskey free <i class="fa-solid fa-arrow-right fa-sm"></i>
+          </button>
+          <p class="text-2xl">On a big team? Contact sales</p>
+          <div class="icons flex gap-8 justify-center mt-4">
+            <img
+              class="hover:scale-110 duration-150 cursor-pointer"
+              src="public/apple-black-logo 2.png"
+              alt=""
+            />
+            <img
+              class="hover:scale-110 duration-150 cursor-pointer"
+              src="public/windows-logo 1.png"
+              alt=""
+            />
+            <img
+              class="hover:scale-110 duration-150 cursor-pointer"
+              src="public/android-logo 1.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="pb-8 bg-[#043873]">
+      <div class="containerr text-[#FFFFFF] max-xl:px-4 max-xl:w-full">
+        <div
+          class="foooter-part-one grid grid-cols-5 gap-8 pb-6 border-b border-[#2E4E73] max-md:grid-cols-1 max-md:border-0"
+        >
+          <div class="img">
+            <img class="mb-2" src="public/Logo.png" alt="" />
+            <p>
+              whitepace was created for the new ways we live and work. We make a
+              better workspace around the world
+            </p>
+          </div>
+          <ul>
+            <li class="font-bold text-lg mb-2">product</li>
+            <li class="hover:translate-x-1 hover:text-[#FFE492] duration-150">
+              <a href="">overview</a>
+            </li>
+            <li class="hover:translate-x-1 hover:text-[#FFE492] duration-150">
+              <a href="">pricing</a>
+            </li>
+            <li class="hover:translate-x-1 hover:text-[#FFE492] duration-150">
+              <a href="">customer stories</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="font-bold text-lg mb-2">Resources</li>
+            <li class="hover:translate-x-1 hover:text-[#FFE492] duration-150">
+              <a href="">Blog</a>
+            </li>
+            <li class="hover:translate-x-1 hover:text-[#FFE492] duration-150">
+              <a href="">Guides & tutorials</a>
+            </li>
+            <li class="hover:translate-x-1 hover:text-[#FFE492] duration-150">
+              <a href="">Help center</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="font-bold text-lg mb-2">Company</li>
+            <li class="hover:translate-x-1 hover:text-[#FFE492] duration-150">
+              <a href="">About us</a>
+            </li>
+            <li class="hover:translate-x-1 hover:text-[#FFE492] duration-150">
+              <a href="">Careers</a>
+            </li>
+            <li class="hover:translate-x-1 hover:text-[#FFE492] duration-150">
+              <a href="">Media kit</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="font-bold text-lg mb-2">Try It Today</li>
+            <li>
+              Get started for free. Add your whole team as your needs grow.
+            </li>
+            <li>
+              <button class="bg-[#4F9CF9] text-white px-4 py-2 rounded-lg mt-2">
+                start today <i class="fa-solid fa-arrow-right fa-sm"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="foooter-part-two flex items-center justify-between mt-2 max-sm:items-center max-md:flex-col max-md:items-start max-md:gap-4"
+        >
+          <div
+            class="flex items-center w-full gap-10 max-sm:flex-col max-md:border-b border-[#2E4E73] pb-2"
+          >
+            <div>
+              <i class="fa-solid fa-globe text-white"></i>
+              <select class="bg-[#043873] cursor-pointer" name="" id="">
+                <option value="">English</option>
+              </select>
+            </div>
+            <a href="">Terms & privacy</a>
+            <a href="">Security</a>
+            <a href="">Status</a>
+            <a href="">©2021 Whitepace LLC.</a>
+          </div>
+          <div class="flex gap-8">
+            <a class="hover:-translate-y-1 duration-150" href=""
+              ><i
+                class="fa-brands fa-facebook-f text-white hover:text-[#FFE492]"
+              ></i
+            ></a>
+            <a class="hover:-translate-y-1 duration-150" href=""
+              ><i
+                class="fa-brands fa-twitter text-white hover:text-[#FFE492]"
+              ></i
+            ></a>
+            <a class="hover:-translate-y-1 duration-150" href=""
+              ><i
+                class="fa-brands fa-linkedin-in text-white hover:text-[#FFE492]"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
